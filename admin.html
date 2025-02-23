@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For charts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">Admin Dashboard</div>
+    <div class="icons">
+        <ul>
+            <li><i class="fas fa-bell"></i>Notification</li>
+            <li><i class="fas fa-user"></i>User</li>
+            <li><i class="fas fa-cog"></i>Setting</li>
+        </ul>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <ul>
+      <li><i class="fa fa-home"aria-hidden="true"></i> Home</li>
+      <li><i class="fas fa-users"></i> Customers</li>
+      <li><i class="fas fa-user-tie"></i> Staff</li>
+      <li><i class="fas fa-truck"></i> Suppliers</li>
+      <li><i class="fas fa-box"></i> Products</li>
+      <li><i class="fas fa-cubes"></i> Materials</li>
+      <li><i class="fas fa-shopping-cart"></i> Purchases</li>
+      <li><i class="fas fa-shopping-bag"></i> Orders</li>
+      <li><i class="fas fa-wallet"></i> Payments</li>
+      <li><i class="fas fa-chart-line"></i> Generate Reports</li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <div class="overview">
+      <div class="card light-pink">Weekly Sales: 105,000 INR 
+        <i id = "side-logo"class="fas fa-chart-line"></i>
+      </div>
+      <div class="card light-green">Weekly Orders: 250
+        <i id = "side-logo"class="fas fa-chart-line"></i>
+      </div>
+      <div class="card light-blue">Online Visitors: 1,200
+        <i id = "side-logo"class="fas fa-chart-line"></i>
+      </div>
+    </div>
+
+    <div class="charts">
+      <div class="chart-container">
+        <canvas id="salesChart"></canvas>
+      </div>
+      <div class="chart-container">
+        <canvas id="visitChart"></canvas>
+      </div>
+    </div>
+
+    <div class="orders">
+      <h2>Order List </h2>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Due Date</th>
+            <th>Progress</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Order A</td>
+            <td>2024-11-25</td>
+            <td><div class="progress"><div style="width: 80%;">80%</div></div></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Order B</td>
+            <td>2024-11-27</td>
+            <td><div class="progress"><div style="width: 50%;">50%</div></div></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Order C</td>
+            <td>2024-12-01</td>
+            <td><div class="progress"><div style="width: 25%;">25%</div></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

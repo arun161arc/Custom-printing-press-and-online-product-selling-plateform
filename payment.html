@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrintPro - Checkout</title>
+    <link rel="stylesheet" href="payment.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="logo">
+      <img src="PrintNest_logo.png" alt="Logo" />
+      <span>PrintNest</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="index.html#service"><i class="fa-solid fa-print"></i> Services</a></li>
+      <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+  
+
+    <!-- Checkout Section -->
+    <div class="checkout" id="checkout">
+        <h2>Checkout</h2>
+
+        <!-- Order Summary -->
+        <div class="order-summary">
+            <h3>Order Summary</h3>
+            <div id="summaryDetails"></div>
+            <p>Total: <span id="orderTotal">₹0.00</span></p>
+        </div>
+
+        <!-- Payment Options
+        <div class="payment-options">
+            <h3>Select Payment Method</h3>
+            <button id="payWithRazorpay" class="payment-btn">Pay with Razorpay</button>
+            <button id="payWithStripe" class="payment-btn">Pay with Stripe</button>
+        </div> -->
+
+        <section id="payment-options">
+            <h3>Choose Your Payment Option</h3>
+            <div class="payment-cards">
+              <div class="payment-card" id="credit-card" onclick="showQRCode('Credit/Debit Card')">
+                <h3>Credit/Debit Card</h3>
+                <p>Pay using your Visa, MasterCard, or AmEx.</p>
+              </div>
+              <div class="payment-card" id="paypal" onclick="showQRCode('PayPal')">
+                <h3>PayPal</h3>
+                <p>Secure and fast payments through PayPal.</p>
+              </div>
+              <div class="payment-card" id="upi"  onclick="showQRCode('UPI')">
+                <h3>UPI</h3>
+                <p>Pay via Google Pay, PhonePe, or BHIM.</p>
+              </div>
+              <div class="payment-card" id="net-banking" onclick="showQRCode('Net Banking')">
+                <h3>Net Banking</h3>
+                <p>Pay directly through your bank account.</p>
+              </div>
+            </div>
+          </section>
+          
+        <!-- Payment Success Message -->
+        <div id="successMessage" class="hidden">
+            <h3>Payment Successful!</h3>
+            <p>Thank you for your order. We’ll notify you once it’s processed.</p>
+        </div>
+    </div>
+    
+
+<!-- QR Code Popup -->
+<div id="qrPopup" class="hidden">
+  <div class="popup-content">
+      <h3 id="paymentMethod">Payment Method</h3>
+      <img src="products image/OR.jpeg" alt="QR Code" id="qrCodeImage" />
+      <p>Scan the QR code to complete your payment.</p>
+      <button onclick="generateOrderID()">Mark Payment as Completed</button>
+  </div>
+</div>
+
+<!-- Order ID Display -->
+<div id="orderConfirmation" class="hidden">
+  <h3>Payment Successful!</h3>
+  <p>Your Order ID: <span id="orderId"></span></p>
+</div>
+
+
+
+       <!-- Track Your Order Section -->
+<section class="track-order" id="trackOrder">
+  <h2>Track Your Order</h2>
+  <p>Enter your order ID to check the status of your order.</p>
+  <form id="trackOrderForm">
+    <label for="orderId">Order ID:</label>
+    <input type="text" id="orderId" placeholder="Enter your Order ID" required>
+    <button type="submit" class="track-btn">Track Order</button>
+  </form>
+</section>
+
+
+<!-- Dynamic Pop-Up -->
+<div id="popup">
+  <div class="popup-content">
+    <img id="popupGif" src="products image/tracing_order.gif" alt="Loading..." class="popup-gif">
+    <p>Tracking your order...</p>
+  </div>
+</div>
+
+
+    <script src="payment.js"></script>
+</body>
+</html>

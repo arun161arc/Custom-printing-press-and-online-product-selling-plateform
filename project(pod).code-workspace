@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../HTML_&_CSS"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "project(pod)"
+	}
+}

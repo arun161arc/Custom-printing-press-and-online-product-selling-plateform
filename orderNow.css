@@ -1,0 +1,433 @@
+/* Header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #0396FF, #2575fc);
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 25%,25%,25%,25%;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav-links a i {
+  margin-right: 8px;
+}
+.navbar a:hover {
+  color:  #ffdf00;
+}
+
+
+.cart{
+  height: 24px;
+  color:#162938;
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 10px;
+  border-radius: 3px;
+  width: 80px;
+}
+.cart p{
+  font-size: 1.25em;
+  font-weight: 700;
+}
+.cart ion-icon{
+  font-size: 2em;
+  
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background-color: #444;
+  color: #fff;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 285px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.product-card p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.product-card .btn-order {
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-card .btn-order:hover {
+  background-color: #ff9900;
+}
+
+
+/* Styling for the Cart Section */
+#cart {
+  width: 60%;
+  margin: 30px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #dde8f1;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#cart h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1.5px solid #ddd;
+  padding: 10px 0;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.row-img {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.rowimg {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+.cart-item p {
+  flex: 1;
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+  text-align: left;
+}
+
+.cart-item h2 {
+  font-size: 18px;
+  color: #444;
+  margin: 0 20px 0 0;
+}
+
+.remove-btn {
+  background-color: #ff5f57;
+  color: #fff;
+  margin-left: auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.remove-btn:hover {
+  background-color: #d9534f;
+}
+
+#cartItem {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+#cart h3 {
+  text-align: right;
+  font-size: 20px;
+  color: #333;
+}
+
+#total {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Styling for Place Order Button */
+.place-order-btn {
+  margin: 20px auto;     
+  padding: 10px 20px;  
+  display: block;
+  width: 20%;
+  background-color: #28a745;
+  color: #fff;
+ 
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.place-order-btn:hover {
+  background-color: #218838;
+}
+
+.place-order-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Footer Section */
+footer {
+  height: 60px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.footer-links a {
+  color: #3498db;
+  text-decoration: none;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+  /* Success Section Styling */
+  .succes {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .succes img {
+    width: 150px;
+    height: auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .upload-form {
+      padding: 20px;
+    }
+  
+    .drag-drop {
+      padding: 20px;
+    }
+  
+    .submit-btn {
+      width: 100%;
+    }
+  }
+  
+
+  
+
+  /* Overlay Styling */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Success Container */
+.success-container {
+  text-align: center;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: popUp 0.5s ease-out;
+}
+
+.success-container h2 {
+  margin: 20px 0 10px;
+  color: #28a745;
+}
+
+.success-container p {
+  color: #333;
+}
+
+/* Checkmark Animation */
+.checkmark {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #28a745;
+  stroke-miterlimit: 10;
+  margin: 0 auto 20px;
+  box-shadow: inset 0px 0px 0px #28a745;
+  animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+}
+
+.checkmark .stem {
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background-color: #28a745;
+  top: 28px;
+  left: 15px;
+  transform: rotate(45deg);
+  transform-origin: left top;
+  animation: draw 0.5s ease-in-out forwards;
+}
+
+.checkmark .kick {
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background-color: #28a745;
+  top: 38px;
+  left: 25px;
+  transform: rotate(-45deg);
+  transform-origin: left top;
+  animation: draw 0.7s ease-in-out forwards;
+}
+
+/* Keyframes for Animations */
+@keyframes draw {
+  from {
+      width: 0;
+  }
+  to {
+      width: 22px;
+  }
+}
+
+@keyframes fill {
+  from {
+      box-shadow: inset 0px 0px 0px #28a745;
+  }
+  to {
+      box-shadow: inset 0px 56px 56px #28a745;
+  }
+}
+
+@keyframes scale {
+  0%, 100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+}
+
+@keyframes popUp {
+  from {
+      transform: scale(0.5);
+      opacity: 0;
+  }
+  to {
+      transform: scale(1);
+      opacity: 1;
+  }
+}

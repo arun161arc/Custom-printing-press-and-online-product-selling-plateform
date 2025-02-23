@@ -1,0 +1,185 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar .logo img {
+    height: 40px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Upload Form Section */
+.upload-form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+        url('upload_background.jpg') no-repeat center center/cover;
+}
+
+.upload-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+/* Drag & Drop Styling */
+.drag-drop {
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.drag-drop p {
+    margin: 0;
+    color: #888;
+}
+
+.drag-drop span.browse {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#fileList {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Success Section */
+.succes img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+/* Track Order Section */
+.track-order {
+    padding: 40px 20px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(240, 240, 240, 0.9)),
+        url('track_background.jpg') no-repeat center center/cover;
+}
+
+.track-order h2 {
+    text-align: center;
+    color: #444;
+}
+
+.track-order form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.track-order form input,
+.track-order form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.track-order form button {
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.track-order form button:hover {
+    background: #218838;
+}
+
+#orderStatus {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#orderStatus.hidden {
+    display: none;
+}
+
+#statusMessage {
+    font-size: 1.2em;
+    color: #444;
+}

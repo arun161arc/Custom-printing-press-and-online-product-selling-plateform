@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrintNest - Your Online Printing Partner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header class="transparent-header">
+    </header>
+
+    
+    
+    <header class="transparent-header">
+        <div class="logo">
+            <img src="PrintNest_logo.png" alt="Logo" />
+            <span>PrintNest</span>
+          </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><i class="fas fa-home"></i><a href="index.html">Home </a></li>
+                <li><i class="fas fa-info-circle"></i><a href="#about">About</a></li>
+                <li><i class="fa-solid fa-print"></i><a href="#blog">Services</a></li>
+                <li><i class="fa-solid fa-question"></i><a href="#faq">FAQs</a></li>
+                <li><i class="fas fa-envelope"></i><a href="#contact">Contact Us</a></li>
+                <li><button class="btn-login"> <i class="fa-solid fa-right-to-bracket"></i> Login</button></li>
+                <li><button class = "btn-login"> <i class="fa-solid fa-user"></i> Sign Up</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+<!--login interface -->
+<div id = "login-interface" class = "wrapper"> 
+    <span class = "icon-close"> <ion-icon name="close"></ion-icon> </span>
+    <div class = "form-box login">
+        <h2> Login    </h2>
+        <form action = "#">
+            <div class ="input-box">
+                <span class = "icon"> <ion-icon name="mail"></ion-icon> </span>
+                <input type ="email" required>
+                <label> Email</label>
+            </div>
+            <div class ="input-box">
+                <span class = "icon"> <ion-icon name="lock-closed"></ion-icon> </span>
+                <input type ="password" required>
+                <label>Password </label>
+            </div>
+            <div class ="input-box">
+                <span class = "icon"> <ion-icon name="lock-closed"></ion-icon> </span>
+                <input type ="text" required>
+                <label> Address </label>
+            </div>
+            <div class = "remember-forgot">
+                <label> <input type = "checkbox">Remember me </label>
+                <a herf = "#"> Forgot Password </a>
+            </div>
+            <button type "submit" class ="btn"> Login</button>
+            <div class = "login-register">
+                <p> Don't have an account? <a herf = "login-interface" class "register-link"> Register </a> </p>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+    
+    <section class="hero">
+        <video autoplay muted loop class="background-video">
+            <source src="video5(1).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay">
+            <h1>Fast & Reliable Online Printing</h1>
+            <p>The Right Partner For Your Printing Needs .</p>
+            <div class="button-container">
+                <button class="cta" onclick="window.location.href='upload.html'">
+                    <i class="fas fa-upload"></i>Upload Files</button>
+                <button class="cta" onclick="window.location.href='orderNow.html'">
+                    <i class="fas fa-shopping-cart"></i>Start Order</button>
+            </div>
+        </div>
+    </section>
+
+
+<section class="blog-section" id="blog">
+    <h2>Holographic Strips and Labels </h2>
+    <div class="blog-container">
+        <!-- Blog Post 1 -->
+        <div class="blog-post">
+            <img src="holo2.jpg" alt="holo " class="blog-img">
+            <div class="blog-content">
+                <h4> Holographic Strips</h4>
+                <a href="#add to cart" class="btn-read-more">Place order</a>
+            </div>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="blog-post">
+            <img src="injecct_labels.jpg" alt="bar code" class="blog-img">
+            <div class="blog-content">
+                <h4>Barcode & Inject Labels</h4>
+                <a href="#add to cart" class="btn-read-more">Place order</a>
+            </div>
+        </div>
+
+        <!-- Blog Post 3 -->
+        <div class="blog-post">
+            <img src="package roll.jpg" alt="package label" class="blog-img">
+            <div class="blog-content">
+                <h4>Packaging Labels</h4>                
+                <a href="#add to cart" class="btn-read-more">Place order</a>
+            </div>
+        </div>
+
+        <!-- Add more blog posts similarly -->
+    </div>
+</section>
+
+
+<!-- packageing material with Photo  Section -->
+<section class="blog-section" id="blog">
+    <h2>Packaging Material </h2>
+    <div class="blog-container">
+        <!-- Blog Post 1 -->
+        <div class="blog-post">
+            <img src="cpm.jpg" alt="CPM" class="blog-img">
+            <div class="blog-content">
+                <h4> Confectionery Packaging Material</h4>
+                <a href="#add to cart" class="btn-read-more">Place order</a>
+            </div>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="blog-post">
+            <img src="ipm1.jpg" alt="IPM" class="blog-img">
+            <div class="blog-content">
+                <h4>Industrial Packaging Material </h4>
+                <a href="#add to cart" class="btn-read-more">Place order</a>
+            </div>
+        </div>
+
+        <!-- Blog Post 3 -->
+        <div class="blog-post">
+            <img src="bwp.jpg" alt="BWP" class="blog-img">
+            <div class="blog-content">
+                <h4>Bubble Packaging Material </h4>                
+                <a href="#add to cart" class="btn-read-more">Place order</a>
+            </div>
+        </div>
+
+        <!-- Add more blog posts similarly -->
+    </div>
+</section>
+
+<!-- Service  Section -->
+<section class="blog-section" id="blog">
+    <h2 id="service"> Services </h2>
+    <div class="blog-container">
+        <!-- Blog Post 1 -->
+        <div class="blog-post">
+            <img src="poster printing.jpg" alt=" Service 1" class="blog-img">
+            <div class="blog-content">
+                <h3>Poster Printing</h3>
+                <p> Create vibrant, eye-catching posters for events, promotions, or personal decor. 
+                    Our high-resolution printing ensures your designs stand out, 
+                    offering durability and color accuracy to make a lasting impression...</p>
+
+            </div>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="blog-post">
+            <img src="mug printing.jpg" alt="Service 2" class="blog-img">
+            <div class="blog-content">
+                <h3>Mug printing</h3>
+                <p>Personalize your mugs with photos, logos, or text, ideal 
+                    for gifts or branding. Our high-quality mug printing provides sharp,
+                    lasting designs that stay vibrant, even with daily use...</p>
+                
+            </div>
+        </div>
+
+        <!-- Blog Post 3 -->
+        <div class="blog-post">
+            <img src="tshirt printing.jpg" alt="Service 3" class="blog-img">
+            <div class="blog-content">
+                <h3>T-Shirt Printing</h3>
+                <p>Express yourself with custom T-shirt printing.
+                    From one-off designs to bulk orders, we offer top-quality prints with rich colors and durability, 
+                    perfect for personal use, events, or branding...</p>
+                
+            </div>
+        </div>
+
+        <div class="blog-post">
+            <img src="brochure panting.jpg" alt="Service 4" class="blog-img">
+            <div class="blog-content">
+                <h3>Brochure Printing</h3>
+                <p>Showcase your brand or services with professionally printed brochures.
+                    Our high-quality prints enhance readability and aesthetics, 
+                    ensuring your message is clear, appealing, and impactful...</p>
+                
+            </div>
+        </div>
+
+        <div class="blog-post">
+            <img src="flex printing.jpg" alt="Service 5" class="blog-img">
+            <div class="blog-content">
+                <h3>Flex Printing</h3>
+                <p>Make your promotions stand out with durable and weather-resistant flex prints.
+                    Ideal for outdoor advertising, our vibrant,
+                    long-lasting prints ensure your message reaches a broad audience...</p>
+                
+            </div>
+        </div>
+
+        <div class="blog-post">
+            <img src="digi printing.jpg" alt="Service 6" class="blog-img">
+            <div class="blog-content">
+                <h3>Digital Printing</h3>
+                <p>Achieve sharp, high-resolution prints with our digital printing service.
+                    Perfect for both short and long runs, we provide quick,
+                    flexible solutions for documents, banners, and customized prints...</p>
+                
+            </div>
+        </div>
+
+        <!-- Add more blog posts similarly -->
+    </div>
+</section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="service-box">
+            <h2>Upload Files</h2>
+            <p>Easily upload documents in various formats for printing.</p>
+        </div>
+        <div class="service-box">
+            <h2>Order Now</h2>
+            <p>Customize your order with paper types, sizes, and quantity.</p>
+        </div>
+        <div class="service-box">
+            <h2>Track Your Order</h2>
+            <p>Monitor your order status and get real-time delivery updates.</p>
+        </div>
+    </section>
+<!-- FAQ Section -->
+<section class="faq" id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+        <h3>How long does printing take?</h3>
+        <p class="faq-answer">Printing times vary depending on order size. Most orders are ready within 24 hours.</p>
+    </div>
+    <div class="faq-item">
+        <h3>What file formats do you accept?</h3>
+        <p class="faq-answer">We accept PDFs, DOCs, JPGs, and PNGs for seamless printing.</p>
+    </div>
+    <div class="faq-item">
+        <h3>Can I cancel my order?</h3>
+        <p class="faq-answer">Yes, you can cancel before the printing process starts.</p>
+    </div>
+</section>
+
+<!-- about Section -->
+<section class="about-section" id="about">
+    <div class="about-content">
+        <div class="about-text">
+            <h2>About PrintNest</h2>
+            <p>
+                PrintNest is your one-stop solution for all your printing needs. Whether it's essential documents, vibrant presentations, or treasured photos, 
+                we provide high-quality printing services with a variety of customizable options. Our easy-to-use platform ensures that your order is just 
+                a few clicks away from completion. With a focus on speed, reliability, and excellent customer support, we deliver tailored solutions to meet 
+                your expectations. At PrintNest, we make your printing experience simple, seamless, and affordable—just the way you want it!
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="shop.jpg" alt="About PrintPro">
+        </div>
+    </div>
+</section>
+
+
+<!-- Map Section -->
+<section class="map" id="contact">
+    <h2>Our Location</h2>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.839671791!2d77.06889755624492!3d28.527582331174164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceff5d94aa8e3%3A0x8ad2d03f351f93e7!2sDelhi%2C%20India!5e0!3m2!1sen!2sin!4v1600427772371!5m2!1sen!2sin" 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+    </iframe>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+        <div class="contact-method">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:example@example.com">printnest@gmail.com</a>
+        </div>
+        <div class="contact-method">
+            <i class="fab fa-twitter"></i>
+            <a href="https://twitter.com/yourhandle" target="_blank">@printnest</a>
+        </div>
+        <div class="contact-method">
+            <i class="fab fa-instagram"></i>
+            <a href="https://instagram.com/yourhandle" target="_blank">@printnest247</a>
+        </div>
+        <div class="contact-method">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+1234567890">+1 234 567 890</a>
+        </div>
+    </div>
+
+    <form id="contactForm" class="contact-form">
+        <h3>Send Us a Message</h3>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+</section>
+
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 PrintNest. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Support</a></li>
+        </ul>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
